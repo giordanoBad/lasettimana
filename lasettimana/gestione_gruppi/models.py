@@ -4,6 +4,7 @@ class Gruppo(models.Model):
     nome = models.CharField(max_length=100)
     cognome = models.CharField(max_length=100)
     numero_telefono = models.CharField(max_length=20)
+    indirizzo_soggiorno = models.CharField(max_length=100, blank=True)
     data_arrivo = models.DateField()
     data_partenza = models.DateField()
     
@@ -20,6 +21,7 @@ class MembroGruppo(models.Model):
     nome = models.CharField(max_length=100)
     cognome = models.CharField(max_length=100)
     numero_telefono = models.CharField(max_length=20)
+    indirizzo_soggiorno = models.CharField(max_length=100, blank=True)
     data_arrivo = models.DateField()
     data_partenza = models.DateField()
 

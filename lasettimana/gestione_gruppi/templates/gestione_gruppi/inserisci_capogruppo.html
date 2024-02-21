@@ -67,11 +67,7 @@
       <form method="post">
           {% csrf_token %}
           {{ gruppo_form|crispy}}
-          <div class="form-group">
-            <!-- <label for="{{ form.numero_membri.id_for_label }}">Numero Membri - </label> -->
-            {{ form.numero_membri }}
-            <small id="{{ form.numero_membri.id_for_label }}_help" class="form-text text-warning">Inserisci il numero di membri nel gruppo oltre te. Se sei solo scrivi 0</small>
-        </div>
+      
           
           <button type="button" class="btn btn-primary">Prosegui</button>
       </form>
